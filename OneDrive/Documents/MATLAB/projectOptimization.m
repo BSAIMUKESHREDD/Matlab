@@ -8,18 +8,30 @@ MWN2=44;
 MWCH4=16;
 MWCO2=44;
 
-AM =0.5;
+AM =0:0.1:1;
 
-
-TR=TF ;
+TF =25 ;PF=1;
+TR=TF;
 PR=PF;
 
+for XFN2 =0:0.01:1
+    for XFCO2 =0:0.01:1
+        for XFCH4 =0:0.01:1
+               for QCO2=0:100
+                   for QCH4=0:100
+                        for QN2=0:100
+                   
+                        end
+                    end
+               end
+        end
+    end
+end
 
 NF= PF*QF/R*TF;
 NP= PP*QP/R*TP;
 NR= PR*QR/R*TR;
 
-NF= NP+NR;
 
 XFN2 = (NR*XRN2 + NP*XPN2)/NF;
 XFCO2 = (NR*XRCO2 + NP*XPCO2)/NF;
