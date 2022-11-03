@@ -1,0 +1,10 @@
+[user]
+	name = B SAI MUKESH REDDY
+	email = 60388830+BSAIMUKESHREDD@users.noreply.github.com
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
